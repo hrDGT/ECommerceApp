@@ -1,0 +1,27 @@
+:root {
+  --color-reddish-pink: #E55A63;
+  --color-candy-pink: #F4717A;
+  --color-cherry-paddle-pop: #FF2D55;
+  --color-angora-white: #F5F5F7;
+  --color-matte-steel: #E2E2E4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SF UI Display', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.main {
+  min-height: 80vh;
+}
