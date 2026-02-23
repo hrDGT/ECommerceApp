@@ -1,0 +1,33 @@
+.catalog-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-angora-white);
+}
+
+.categories-categories {
+  margin-bottom: 2rem;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: minmax(200px, 25%) 1fr;
+  gap: 3rem;
+  padding: 0 5vw;
+}
+
+.tag-menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .categories-menu {
+    width: 100%;
+  }
+}
