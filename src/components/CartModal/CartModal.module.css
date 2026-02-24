@@ -1,0 +1,143 @@
+.cartModal {
+  padding: 1rem;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemTitle {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.itemPrice {
+  font-weight: 600;
+  color: var(--color-reddish-pink);
+}
+
+.oldPrice {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #666;
+  transition: 0.2s;
+}
+
+.removeButton:hover {
+  background: #f0f0f0;
+  color: #c00;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: 2px solid #eee;
+}
+
+.checkoutButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-reddish-pink);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.checkoutButton:hover {
+  opacity: 0.9;
+}
+
+.loading {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .cartModal {
+    min-width: auto;
+    width: 90vw;
+    max-width: none;
+    padding: 0.5rem;
+  }
+
+  .item {
+    gap: 0.5rem;
+  }
+
+  .itemTitle {
+    font-size: 0.9rem;
+  }
+
+  .removeButton {
+    font-size: 1rem;
+    padding: 2px;
+  }
+}
