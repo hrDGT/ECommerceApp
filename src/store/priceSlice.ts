@@ -1,9 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type PriceState = {
-  min: number;
-  max: number;
-};
+import type { PriceState } from "../types/store";
 
 const initialState: PriceState = {
   min: 0,

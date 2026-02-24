@@ -28,3 +28,13 @@ export type LikesState = {
   count: number;
   items: Record<number, boolean>;
 };
+
+export type PriceState = {
+  min: number;
+  max: number;
+};
+
+export type AttributeFilterState = {
+  brands: string[];
+  weights: number[];
+};

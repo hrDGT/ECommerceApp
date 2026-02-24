@@ -1,9 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type AttributeFilterState = {
-  brands: string[];
-  weights: number[];
-};
+import type { AttributeFilterState } from "../types/store";
 
 const initialState: AttributeFilterState = {
   brands: [],

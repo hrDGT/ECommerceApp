@@ -18,7 +18,3 @@ export type Cart = {
   totalProducts: number;
   totalQuantity: number;
 };
-
-export type CartsResponse = {
-  carts: Cart[];
-};
