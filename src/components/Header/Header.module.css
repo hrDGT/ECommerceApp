@@ -142,6 +142,7 @@
     align-items: stretch;
     gap: 1rem;
     padding: 1rem 5vw;
+    min-height: auto;
   }
 
   .search-section {
