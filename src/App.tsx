@@ -8,7 +8,7 @@ import styles from './App.module.css';
 function App() {
   return (
     <Provider store={store}>
-      <div className={styles.App}>
+      <div className={styles.app}>
         <RouterProvider router={router} />
       </div>
     </Provider>
