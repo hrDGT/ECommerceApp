@@ -70,7 +70,6 @@ export function Header() {
             />
           </div>
         </form>
-
       </div>
 
       <div className={styles.navSection}>
